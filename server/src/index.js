@@ -1,10 +1,11 @@
 import express from "express";
 const app = express();
 const PORT = 3001;
+const data = ["Afzal"];
 
-app.get("/", function (req, res) {
-  res.send("Hello Server");
+app.get("/api/products", function (req, res) {
+  res.send(data);
 });
 app.listen(PORT, () => {
-  console.log(`Hello Afzal Your Port Server is running on this ${PORT}`);
+  console.log(`Hii Afzal Your Port Server is running on this ${PORT}`);
 });
